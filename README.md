@@ -22,3 +22,6 @@ Funcionalidades:
 - Pesquisar Profiles
 
 - Overview Profiles
+
+
+Para acessar a aplicação primeiro você deve ter um banco de dados MONGODB previamente criado
