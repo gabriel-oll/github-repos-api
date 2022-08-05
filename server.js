@@ -13,6 +13,10 @@ app.use(express.urlencoded({
   extended: true
 }));
 
+app.get('/', (req, res) => {
+  res.send('welcome!')
+})
+
 // routes 
 app.use('/profile', profilesRouter)
 
