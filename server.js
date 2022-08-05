@@ -13,17 +13,13 @@ app.use(express.urlencoded({
   extended: true
 }));
 
-// routes
+// routes 
 app.use('/profile', profilesRouter)
-// create
+
+app.listen(port, () => {
+  console.log(`Example app listening on port ${port}`)
+})
 
 mongoose
   .connect(`mongodb+srv://${db_user}:${db_pass}@gh-api-cluster.nkavpon.mongodb.net/?retryWrites=true&w=majority`)
-  .then(
-    () => {
-      console.log('conection success')
-      app.listen(port, () => {
-        console.log(`Example app listening on port ${port}`)
-      })
-    }
-  );
+  .then(console.log('conection success'));
