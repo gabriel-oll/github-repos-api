@@ -3,7 +3,7 @@ const express = require('express');
 const mongoose = require('mongoose');
 const app = express();
 const port = process.env.PORT || 5000;
-const profilesRouter = require('../routes/ProfilesRouter')
+const profilesRouter = require('./api/src/routes/ProfilesRouter')
 
 const db_user = process.env.DB_USER
 const db_pass = process.env.DB_PASSWORD
