@@ -96,7 +96,7 @@ router.put("/:username", (req, res) => {
       }
     })
   })
-  
+
 // DELETE
 
 router.delete("/:username", async (req, res) => {
@@ -104,10 +104,10 @@ router.delete("/:username", async (req, res) => {
 
   try {
     const profile = await Profile.deleteOne({ username : userSearch })
-    res.status(200).json("dleetado com sucesso")
-  } 
+    res.status(200).json("deletado com sucesso!")
+  }
   catch(error) {
-    return res.status(500).json({error : "some error ocurred"})
+    return res.status(500).json({error : "não foi possível completar a operação"})
   }
 })
 
