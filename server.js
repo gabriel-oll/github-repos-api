@@ -2,7 +2,7 @@ require('dotenv').config();
 const express = require('express');
 const mongoose = require('mongoose');
 const app = express();
-const port = process.env.PORT || 3000;
+var port = process.env.PORT || 80
 const profilesRouter = require('./api/src/routes/ProfilesRouter')
 
 const db_user = process.env.DB_USER
