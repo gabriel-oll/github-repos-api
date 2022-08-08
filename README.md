@@ -24,4 +24,4 @@ A aplicação consistirá em desenvolver uma entidade que tem como papel armazen
 - Overview Profiles
 
 
-Para acessar a aplicação primeiro você deve ter um banco de dados MONGODB previamente criado
+## Para acessar a aplicação primeiro você deve ter um banco de dados MONGODB previamente criado, acesse o site e crie-o adicionando as variáveis de ambiente dentro do arquivo .env.example
